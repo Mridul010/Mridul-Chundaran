@@ -1,6 +1,6 @@
 def count_multiples(arr):
     result = {}
-
+    # for every element if it is divisible by numbers from 1-9 then add count to that number
     for i in range(1, 10):
         count = 0
         for x in arr:
@@ -10,6 +10,8 @@ def count_multiples(arr):
 
     return result
 
-
-arr = [1, 2, 8, 9, 12, 46, 76, 82, 15, 20, 30]
+arr = []
+n = int(input("Enter limit of the array"))
+for i in range(n):
+    arr[i]= int(input("Enter the numbers"))
 print(count_multiples(arr))
